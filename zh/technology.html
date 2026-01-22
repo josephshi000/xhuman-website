@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>技术 | xHuman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="xHuman 平台背后的技术与系统架构。" />
+  <link rel="alternate" hreflang="en" href="/technology.html" />
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.6; color: #111;">
+
+  <nav style="margin-bottom: 40px;">
+    <a href="/zh/">首页</a> |
+    <a href="/zh/platform.html">平台</a> |
+    <a href="/zh/technology.html"><strong>技术</strong></a> |
+    <a href="/zh/about.html">关于</a> |
+    <a href="/zh/contact.html">联系</a>
+    <span style="margin-left: 14px;">|</span>
+    <a href="/technology.html" title="Switch to English">English</a>
+  </nav>
+
+  <h1>技术</h1>
+  <p>
+    xHuman 以系统级架构为基础，面向可靠性、可扩展性与长期运行进行设计。
+    平台强调边缘实体与中心化逻辑之间的职责分离，从而在不依赖边缘侧持续在线的情况下，
+    仍能实现一致、稳定的系统行为。
+  </p>
+
+  <h2>系统架构</h2>
+  <p>
+    xHuman 的核心技术原则是“事件驱动 + 云端编排”的系统模型。
+    各类互动实体作为职责受限的节点运行，持续产生离散事件；
+    平台在中心侧统一处理这些事件，以维持系统一致性与长期状态连续性。
+  </p>
+
+  <ul>
+    <li><strong>事件驱动设计：</strong>系统响应关键事件，而不是依赖持续轮询或持续连接。</li>
+    <li><strong>中心化状态管理：</strong>系统状态、规则与历史记录统一由平台维护。</li>
+    <li><strong>边缘侧高效：</strong>边缘实体保持低功耗运行，并承担最小必要职责。</li>
+  </ul>
+
+  <h2>可靠性与连续性</h2>
+  <p>
+    平台能够容忍间歇性网络连接与局部系统不可用。
+    通过将事件视为可持久化的系统输入，xHuman 支持故障恢复、事件回放与状态重建，
+    不要求每个实体始终在线或持续运行。
+  </p>
+
+  <ul>
+    <li>优雅处理离线或延迟节点</li>
+    <li>通过事件回放重建系统状态</li>
+    <li>系统重启后保持一致行为</li>
+  </ul>
+
+  <h2>可扩展性</h2>
+  <p>
+    xHuman 的架构能够在实体数量、用户规模与部署场景上实现水平扩展。
+    系统支持逐步增长与增量迭代，而不会显著增加边缘侧的运维复杂度。
+  </p>
+
+  <ul>
+    <li>支持大量协同实体的统一管理</li>
+    <li>清晰接口边界，便于扩展与二次开发</li>
+    <li>平台级更新，无需反复重部署边缘逻辑</li>
+  </ul>
+
+  <h2>安全与数据边界</h2>
+  <p>
+    安全与数据责任被视为平台的一等设计目标。
+    敏感逻辑、状态与策略执行集中在云端，从而减少攻击面并简化合规实现，
+    同时为合作方集成提供清晰边界。
+  </p>
+
+  <ul>
+    <li>边缘侧最小化数据存储</li>
+    <li>中心化访问控制与审计机制</li>
+    <li>运营数据与合作方集成数据边界清晰</li>
+  </ul>
+
+  <h2>知识产权</h2>
+  <p>
+    xHuman 平台由分层的知识产权策略支撑，覆盖系统架构、运营方法与集成边界等关键内容。
+    该策略在兼容合作方协作的同时，增强平台的长期防御性与可持续竞争优势。
+  </p>
+
+  <hr style="margin: 40px 0;" />
+
+  <p>
+    © xHuman · Canada<br />
+    联系方式：<a href="mailto:info@xhuman.ca">info@xhuman.ca</a>
+  </p>
+
+</body>
+</html>
