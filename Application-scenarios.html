@@ -1,15 +1,242 @@
-<nav class="lang-switch">
-  <a href="application-scenarios.html">EN</a> |
-  <a href="zh/application-scenarios.html">中文</a>
-</nav>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Application Scenarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Application Scenarios</h1>
-  <p>This page describes real-world application scenarios.</p>
+
+<header class="page-header">
+  <div class="topbar">
+    <h1>Application Scenarios</h1>
+    <nav class="lang-switch">
+      <a href="application-scenarios.html">EN</a> |
+      <a href="zh/application-scenarios.html">中文</a>
+    </nav>
+  </div>
+  <p>18 event-driven, low-power scenarios — confirming facts only when they matter.</p>
+</header>
+
+<main class="scenario-grid">
+
+<!-- 01 -->
+<article class="scenario-card">
+  <h2>01. Bag / Keys Forgotten Reminder (Lite)</h2>
+  <img class="scenario-img" src="images/scenarios/s01.jpg" alt="Bag and keys forgotten reminder" loading="lazy">
+  <h3>Scenario</h3>
+  <p>A doll hangs on a handbag or bottle pouch; the core is attached to the keys. When a person walks away and the bag or keys are left behind, the phone immediately warns “You may have forgotten something,” while the doll or tag left behind emits sound or vibration.</p>
+  <h3>Principle</h3>
+  <p>No location tracking. The system triggers only at the moment of abnormal separation between a person and an important item, issuing a one-time, two-way reminder.</p>
+  <h3>What’s different</h3>
+  <p>Not searching after something is lost, but detecting the moment you are about to forget. Reminds both the person and the object, with low power and no continuous connection.</p>
+</article>
+
+<!-- 02 -->
+<article class="scenario-card">
+  <h2>02. Airport Checked-Luggage Tag (Bag Falls Behind)</h2>
+  <img class="scenario-img" src="images/scenarios/s02.jpg" alt="Airport luggage falls behind" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core is embedded in a plastic luggage tag. When other bags on the same flight and destination continue moving but one bag does not, the system identifies that bag as fallen behind.</p>
+  <h3>Principle</h3>
+  <p>Instead of continuous tracking, the system detects anomalies based on <strong>relative consistency among companion luggage</strong>, triggering an event once inconsistency appears.</p>
+  <h3>What’s different</h3>
+  <p>Not waiting until passengers notice missing luggage. The system detects the problem inside the logistics process; users can query status only when needed.</p>
+</article>
+
+<!-- 03 -->
+<article class="scenario-card">
+  <h2>03. Parent–Child Separation in a Mall</h2>
+  <img class="scenario-img" src="images/scenarios/s03.jpg" alt="Child separation in mall" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The child carries a doll. When separated from the parent in a mall or public space, the parent receives an immediate alert, and the child’s doll vibrates or sounds to prompt the child to stop and stay aware.</p>
+  <h3>Principle</h3>
+  <p>The system first detects separation and alerts instantly, then enables location confirmation if needed and identifies nearby adults with similar dolls as potential helpers.</p>
+  <h3>What’s different</h3>
+  <p>Not only location, and not waiting until the child is lost. It resolves risk early through a chain of alert, confirmation, and nearby assistance.</p>
+</article>
+
+<!-- 04 -->
+<article class="scenario-card">
+  <h2>04. Elderly Daily Companion & One-Press Help</h2>
+  <img class="scenario-img" src="images/scenarios/s04.jpg" alt="Elderly daily companion" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The elderly person carries a doll. During normal activities, the system stays silent. If they leave their usual activity range or press the doll for help, the event is recorded and family or caregivers are notified.</p>
+  <h3>Principle</h3>
+  <p>Normal life is the baseline. The system intervenes only on abnormal deviation or manual trigger, and escalates automatically if confirmation is not completed.</p>
+  <h3>What’s different</h3>
+  <p>Not constant monitoring or one-time alarms. Quiet by default, one-press help when needed, and automatic escalation if unconfirmed.</p>
+</article>
+
+<!-- 05 -->
+<article class="scenario-card">
+  <h2>05. Family Trip Luggage Arrival Confirmation</h2>
+  <img class="scenario-img" src="images/scenarios/s05.jpg" alt="Luggage arrival confirmation" loading="lazy">
+  <h3>Scenario</h3>
+  <p>A doll is placed inside checked luggage. Upon arrival, the phone automatically confirms whether the luggage arrived together with the family.</p>
+  <h3>Principle</h3>
+  <p>Uses trip-consistency between person and luggage and triggers a one-time confirmation at arrival, without full-journey tracking.</p>
+  <h3>What’s different</h3>
+  <p>Instead of manual searching after the fact, uncertainty ends immediately upon arrival.</p>
+</article>
+
+<!-- 06 -->
+<article class="scenario-card">
+  <h2>06. School / Park Geofence + One-Tap Acknowledgment</h2>
+  <img class="scenario-img" src="images/scenarios/s06.jpg" alt="School park geofence" loading="lazy">
+  <h3>Scenario</h3>
+  <p>A parent sets an activity boundary. When the child crosses it, the parent is alerted and the child’s doll vibrates as a cue.</p>
+  <h3>Principle</h3>
+  <p>The system detects boundary crossing and supports a one-tap acknowledgment from the child when queried.</p>
+  <h3>What’s different</h3>
+  <p>No continuous tracking or repeated calls. One alert, one confirmation.</p>
+</article>
+
+<!-- 07 -->
+<article class="scenario-card">
+  <h2>07. Doll Encounter Reminder</h2>
+  <img class="scenario-img" src="images/scenarios/s07.jpg" alt="Doll encounter" loading="lazy">
+  <h3>Scenario</h3>
+  <p>When two doll carriers come near each other in public, the phone notifies their presence. Responding or ignoring is entirely optional.</p>
+  <h3>Principle</h3>
+  <p>Detects short-term proximity only and sends a single prompt.</p>
+  <h3>What’s different</h3>
+  <p>Not forced social matching. Presence is noticed; choice remains with the person.</p>
+</article>
+
+<!-- 08 -->
+<article class="scenario-card">
+  <h2>08. Crowd Gathering Visualization</h2>
+  <img class="scenario-img" src="images/scenarios/s08.jpg" alt="Crowd gathering" loading="lazy">
+  <h3>Scenario</h3>
+  <p>When many doll carriers naturally gather in one location, the system displays a concentration state.</p>
+  <h3>Principle</h3>
+  <p>Detects changes in density and quantity, showing only the result.</p>
+  <h3>What’s different</h3>
+  <p>No behavior guidance or social mobilization. State is visible; action is voluntary.</p>
+</article>
+
+<!-- 09 -->
+<article class="scenario-card">
+  <h2>09. Group Purchase & Organization</h2>
+  <img class="scenario-img" src="images/scenarios/s09.jpg" alt="Group organization" loading="lazy">
+  <h3>Scenario</h3>
+  <p>Families, classes, or interest groups form real groups through shared doll ownership. Organizers initiate events; members respond based on real-world availability.</p>
+  <h3>Principle</h3>
+  <p>Built on real relationships and event-driven responses only.</p>
+  <h3>What’s different</h3>
+  <p>Not virtual communities or forced check-ins. Organization follows reality.</p>
+</article>
+
+<!-- 10 -->
+<article class="scenario-card">
+  <h2>10. Ranch Geofence Grazing</h2>
+  <img class="scenario-img" src="images/scenarios/s10.jpg" alt="Ranch geofence grazing" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core is embedded in livestock collars. Animals graze freely; ranchers are notified only when boundaries are crossed.</p>
+  <h3>Principle</h3>
+  <p>Electronic geofence triggers events only on real boundary violations.</p>
+  <h3>What’s different</h3>
+  <p>No constant monitoring. Quiet by default; intervene only when necessary.</p>
+</article>
+
+<!-- 11 -->
+<article class="scenario-card">
+  <h2>11. Vehicle Accident Confirmation</h2>
+  <img class="scenario-img" src="images/scenarios/s11.jpg" alt="Vehicle accident confirmation" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core records a factual event at the moment a collision occurs.</p>
+  <h3>Principle</h3>
+  <p>Triggered by abnormal impact and sudden state change, not continuous driving logs.</p>
+  <h3>What’s different</h3>
+  <p>Only the key moment is recorded, creating verifiable evidence.</p>
+</article>
+
+<!-- 12 -->
+<article class="scenario-card">
+  <h2>12. Safe / Door / Cabinet Security</h2>
+  <img class="scenario-img" src="images/scenarios/s12.jpg" alt="Safe and cabinet security" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core is placed inside safes or cabinets and remains silent during normal conditions.</p>
+  <h3>Principle</h3>
+  <p>Triggers a factual event only when opening, knocking, or abnormal tampering is detected.</p>
+  <h3>What’s different</h3>
+  <p>No judgment, only facts. Users decide what is abnormal.</p>
+</article>
+
+<!-- 13 -->
+<article class="scenario-card">
+  <h2>13. Long-Term Observation (Rare but Critical)</h2>
+  <img class="scenario-img" src="images/scenarios/s13.jpg" alt="Long term observation" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core may remain silent for months or years until a real change occurs.</p>
+  <h3>Principle</h3>
+  <p>Reports only once at the moment of state change.</p>
+  <h3>What’s different</h3>
+  <p>Designed for long silence and one critical alert.</p>
+</article>
+
+<!-- 14 -->
+<article class="scenario-card">
+  <h2>14. Firearm Management (Regulatory)</h2>
+  <img class="scenario-img" src="images/scenarios/s14.jpg" alt="Firearm management" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core records key state changes such as removal, movement, and return.</p>
+  <h3>Principle</h3>
+  <p>Event-based timeline without continuous tracking.</p>
+  <h3>What’s different</h3>
+  <p>Facts are recorded; compliance decisions remain human.</p>
+</article>
+
+<!-- 15 -->
+<article class="scenario-card">
+  <h2>15. Supervision Devices (Ankle Bracelet)</h2>
+  <img class="scenario-img" src="images/scenarios/s15.jpg" alt="Ankle bracelet monitoring" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core records movement or state changes in supervision devices.</p>
+  <h3>Principle</h3>
+  <p>Event-based logging with on-demand queries.</p>
+  <h3>What’s different</h3>
+  <p>Not continuous surveillance, but factual accountability.</p>
+</article>
+
+<!-- 16 -->
+<article class="scenario-card">
+  <h2>16. General Object Fact Confirmation</h2>
+  <img class="scenario-img" src="images/scenarios/s16.jpg" alt="Object state confirmation" loading="lazy">
+  <h3>Scenario</h3>
+  <p>The core attaches to any object. Users query only when confirmation is needed.</p>
+  <h3>Principle</h3>
+  <p>Returns a one-time factual state.</p>
+  <h3>What’s different</h3>
+  <p>Objects become confirmable, not constantly watched.</p>
+</article>
+
+<!-- 17 -->
+<article class="scenario-card">
+  <h2>17. Tour Group Management</h2>
+  <img class="scenario-img" src="images/scenarios/s17.jpg" alt="Tour group management" loading="lazy">
+  <h3>Scenario</h3>
+  <p>Guides query group status; members respond with a single button press.</p>
+  <h3>Principle</h3>
+  <p>Query-driven confirmation, no continuous tracking.</p>
+  <h3>What’s different</h3>
+  <p>Minimal interruption with clear group awareness.</p>
+</article>
+
+<!-- 18 -->
+<article class="scenario-card">
+  <h2>18. Quick Locate in Crowds / Large Garages</h2>
+  <img class="scenario-img" src="images/scenarios/s18.jpg" alt="Quick locate in crowd or garage" loading="lazy">
+  <h3>Scenario</h3>
+  <p>Parents or owners quickly confirm the location or direction of a child or car.</p>
+  <h3>Principle</h3>
+  <p>Returns a one-time location or relative direction upon request.</p>
+  <h3>What’s different</h3>
+  <p>Not navigation or tracking, just fast confirmation.</p>
+</article>
+
+</main>
 </body>
 </html>
