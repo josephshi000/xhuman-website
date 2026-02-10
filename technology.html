@@ -4,89 +4,90 @@
   <meta charset="UTF-8" />
   <title>Technology | xHuman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Technology and system architecture behind the xHuman platform." />
+  <meta name="description" content="The technology and system architecture behind the xHuman platform." />
+  <link rel="alternate" hreflang="zh" href="/zh/technology.html" />
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.6; color: #111;">
 
- <nav style="margin-bottom: 40px;">
-  <a href="index.html">Home</a> |
-  <a href="platform.html">Platform</a> |
-  <a href="technology.html">Technology</a> |
-  <a href="about.html">About</a> |
-  <a href="application-scenarios.html">Application Scenarios</a> |
-  <a href="contact.html">Contact</a> | 
-  <a href="/zh/">中文</a>
+<nav style="margin-bottom: 40px;">
+  <a href="/index.html">Home</a> |
+  <a href="/platform.html">Platform</a> |
+  <a href="/technology.html"><strong>Technology</strong></a> |
+  <a href="/about.html">About</a> |
+  <a href="/application-scenarios.html">Use Cases</a> |
+  <a href="/contact.html">Contact</a>
+  <span style="margin-left: 14px;">|</span>
+  <a href="/zh/technology.html" title="切换到中文">中文</a>
 </nav>
 
   <h1>Technology</h1>
   <p>
-    xHuman is built on a system-level architecture designed for reliability,
-    scalability, and long-term operation. The platform prioritizes clear
-    separation of responsibilities between edge entities and centralized logic,
-    enabling consistent behavior without requiring continuous operation at the edge.
+    xHuman is built on a system-level architecture designed for reliability, scalability,
+    and long-term operation. The platform emphasizes a clear separation of responsibilities
+    between edge entities and centralized logic, enabling consistent and stable system behavior
+    without requiring edge-side devices to remain continuously online.
   </p>
 
   <h2>System Architecture</h2>
   <p>
-    The core technical principle behind xHuman is an event-driven, cloud-orchestrated
-    model. Interactive entities operate as bounded nodes that generate discrete events.
-    These events are processed centrally to maintain system consistency and long-term
-    state continuity.
+    The core technical principle of xHuman is an “event-driven + cloud orchestration” system model.
+    Interactive entities operate as responsibility-constrained nodes that continuously generate discrete events;
+    the platform processes these events centrally to maintain system consistency and long-term state continuity.
   </p>
 
   <ul>
-    <li><strong>Event-driven design:</strong> The system reacts to meaningful events rather than relying on constant polling or continuous connectivity.</li>
-    <li><strong>Centralized state management:</strong> System state, rules, and history are maintained at the platform level.</li>
-    <li><strong>Edge efficiency:</strong> Edge entities are optimized for low-power operation and limited responsibility.</li>
+    <li><strong>Event-driven design:</strong> The system responds to key events rather than relying on continuous polling or persistent connections.</li>
+    <li><strong>Backend-managed, cloud-controlled state handling:</strong> System state, rules, and historical records are centrally maintained by the platform.</li>
+    <li><strong>Efficient edge operation:</strong> Edge entities run at low power and承担 only the minimum required responsibilities.</li>
   </ul>
 
   <h2>Reliability and Continuity</h2>
   <p>
-    The platform is designed to tolerate intermittent connectivity and partial system
-    availability. By treating events as durable system inputs, xHuman supports recovery,
-    replay, and state reconstruction without requiring persistent online presence from
-    every entity.
+    The platform tolerates intermittent network connectivity and partial system unavailability.
+    By treating events as persistent system inputs, xHuman supports failure recovery, event replay,
+    and state reconstruction—without requiring every entity to be always online or continuously running.
   </p>
 
   <ul>
     <li>Graceful handling of offline or delayed nodes</li>
-    <li>Event replay for state reconstruction</li>
-    <li>Consistent behavior across system restarts</li>
+    <li>System state reconstruction through event replay</li>
+    <li>Consistent behavior maintained after system restarts</li>
   </ul>
 
   <h2>Scalability</h2>
   <p>
-    xHuman is designed to scale horizontally across entities, users, and deployments.
-    The architecture supports incremental expansion without increasing operational
-    complexity at the edge.
+    xHuman’s architecture supports horizontal scaling across entity count, user scale,
+    and deployment scenarios. The system enables gradual growth and incremental iteration
+    without significantly increasing operational complexity on the edge side.
   </p>
 
   <ul>
-    <li>Support for large numbers of coordinated entities</li>
-    <li>Clear interface boundaries for system extension</li>
-    <li>Platform-level updates without redeploying edge logic</li>
+    <li>Unified management of large numbers of collaborative entities</li>
+    <li>Clear interface boundaries that support extension and secondary development</li>
+    <li>Platform-level updates without repeated redeployment of edge logic</li>
   </ul>
 
   <h2>Security and Data Boundaries</h2>
   <p>
-    Security and data responsibility are treated as first-class design concerns.
-    Sensitive logic, state, and policy enforcement are centralized, reducing the
-    attack surface and simplifying compliance.
+    Security and data responsibility are treated as first-class design objectives.
+    Sensitive logic, state, and policy execution are centralized in the cloud,
+    reducing the attack surface and simplifying compliance,
+    while providing clear integration boundaries for partners.
   </p>
 
   <ul>
-    <li>Minimal data retention at the edge</li>
-    <li>Centralized access control and auditing</li>
-    <li>Clear separation between operational data and partner integrations</li>
+    <li>Minimal data storage on the edge side</li>
+    <li>Centralized access control and audit mechanisms</li>
+    <li>Clear separation between operational data and partner integration data</li>
   </ul>
 
   <h2>Intellectual Property</h2>
   <p>
     The xHuman platform is supported by a layered intellectual property strategy
-    covering system architecture, operational methods, and integration boundaries.
-    This approach reinforces long-term defensibility while remaining compatible
-    with partner collaboration.
+    that covers system architecture, operational methods, and integration boundaries.
+    This strategy enables collaboration with partners while strengthening long-term defensibility
+    and sustainable competitive advantage for the platform.
   </p>
 
   <hr style="margin: 40px 0;" />
