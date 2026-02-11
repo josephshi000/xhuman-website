@@ -24,30 +24,33 @@
   </nav>
 
   <h1 style="font-size: 34px; margin-bottom: 10px;">申請區域合作</h1>
+
   <p style="margin-top: 0; color: #333;">
     中國各省合作計畫正式啟動｜請填寫以下資訊，我們將以郵件與你聯繫。
   </p>
 
   <hr style="margin: 30px 0;" />
 
-  <!-- 说明 -->
   <section>
     <h2>申請說明</h2>
     <ul>
       <li>本頁用於提交「區域合作 / 省級合作」意向申請。</li>
       <li>提交後我們將通過郵件進行初步溝通與資料確認。</li>
-      <li>如你希望先了解系統與場景，請前往：<a href="/zh/application-scenarios.html">應用場景</a></li>
+      <li>如你希望先了解系統與場景，請前往：
+        <a href="/zh/application-scenarios.html">應用場景</a>
+      </li>
     </ul>
   </section>
 
   <hr style="margin: 30px 0;" />
 
-  <!-- 表单：使用 mailto，不需要后端 -->
   <section>
     <h2>申請表</h2>
 
-    <form action="mailto:xhuman.lab@hotmail.com" method="post" enctype="text/plain"
-          style="border: 1px solid #ddd; padding: 18px; border-radius: 10px;">
+    <form action="https://formspree.io/f/mjgegzak" method="POST"
+          style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
+
+      <input type="hidden" name="_subject" value="【區域合作申請】xHuman 官網表單提交">
 
       <label style="display:block; margin-top: 10px;">姓名 / 聯絡人</label>
       <input type="text" name="姓名" required
@@ -71,7 +74,7 @@
 
       <label style="display:block; margin-top: 14px;">你希望切入的行業 / 應用方向</label>
       <input type="text" name="行業方向" required
-             placeholder="例如：教育 / 文旅 / 零售 / 連鎖 / 物流 / 陪護 / 企業內部管理..."
+             placeholder="例如：教育 / 文旅 / 零售 / 物流 / 陪護 / 企業內部管理..."
              style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
 
       <label style="display:block; margin-top: 14px;">你擁有的資源與能力（渠道 / 客戶 / 團隊 / 場地等）</label>
@@ -92,34 +95,21 @@
       <textarea name="補充說明" rows="5"
                 style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
 
-      <div style="text-align:center; margin-top: 18px;">
+      <div style="text-align:center; margin-top: 24px;">
         <button type="submit"
-                style="background:#111; color:#fff; padding: 14px 34px; font-size: 16px; border: none; border-radius: 10px; cursor: pointer;"
-                onmouseover="this.style.background='#444'"
-                onmouseout="this.style.background='#111'">
+                style="background:#666; color:#fff; padding: 16px 36px; font-size: 18px; border: none; border-radius: 10px; cursor: pointer;"
+                onmouseover="this.style.background='#888'"
+                onmouseout="this.style.background='#666'">
           提交申請
         </button>
       </div>
 
-      <p style="margin-top: 14px; color:#666; font-size: 14px;">
-        提交後將調用你的郵件客戶端發送申請內容（無需後端）。如未彈出郵件客戶端，請直接發郵件至：
-        <a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a>
-      </p>
     </form>
   </section>
 
   <hr style="margin: 40px 0;" />
 
-  <section>
-    <h2>快速了解</h2>
-    <p>
-      <a href="/zh/application-scenarios.html">→ 查看應用場景</a><br/>
-      <a href="/zh/platform.html">→ 查看產品平台</a><br/>
-      <a href="/zh/technology.html">→ 查看技術架構</a>
-    </p>
-  </section>
-
-  <footer style="margin-top: 50px; color:#666; font-size: 14px;">
+  <footer style="margin-top: 40px; color:#666; font-size: 14px;">
     <p>聯繫郵箱：<a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a></p>
     <p>所在地：加拿大</p>
     <p>© 2026 xHuman Ltd</p>
