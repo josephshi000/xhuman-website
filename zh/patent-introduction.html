@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>xHuman｜发明专利介绍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="xHuman 低功耗事件闭环系统与实体节点机芯发明专利介绍说明。" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.7; color: #111; max-width: 1000px;">
+
+  <!-- 顶部导航 -->
+  <nav style="margin-bottom: 40px;">
+    <a href="/zh/index.html">首页</a> |
+    <a href="/zh/platform.html">平台</a> |
+    <a href="/zh/technology.html">技术架构</a> |
+    <a href="/zh/application-scenarios.html">应用场景</a> |
+    <a href="/zh/about.html">关于</a> |
+    <a href="/zh/contact.html">联系</a>
+    <span style="margin-left: 14px;">|</span>
+    <a href="/patent-introduction.html">English</a>
+  </nav>
+
+  <h1>发明专利介绍说明</h1>
+
+  <hr style="margin:40px 0;" />
+
+  <!-- 系统专利 -->
+  <section>
+    <h2>一种基于低功耗事件节点的实体事件闭环系统及其方法</h2>
+
+    <h3>一、本系统解决的核心问题</h3>
+    <p>
+      现有物联网系统依赖持续在线、持续感知与持续判断，导致功耗不可控、风险不可验证、
+      责任边界模糊、跨场景难复用。
+    </p>
+    <p>
+      本发明不试图让系统更“聪明”，而是重新定义：什么才算一个完成的事件。
+    </p>
+
+    <h3>二、核心思想</h3>
+    <p>
+      系统以“事件闭环”为最小单位，而非持续数据流。
+      事件必须经过“提示—确认—回执”形成闭环才被承认。
+    </p>
+
+    <h3>三、系统结构</h3>
+    <ul>
+      <li>多个低功耗实体事件节点（Event Nodes）</li>
+      <li>系统侧事件协调单元</li>
+      <li>人机确认与回执通道</li>
+    </ul>
+
+    <p><strong>闭环路径：</strong></p>
+    <p>事件产生 → 系统提示 → 人类确认 → 状态回执</p>
+
+    <h3>四、结构解耦</h3>
+    <p>
+      设备只负责触发与确认采集；
+      系统负责编排与状态维护；
+      规则层负责风险与意义解释。
+    </p>
+
+    <h3>五、系统模型区别</h3>
+    <p>
+      传统模型：数据 → 上传 → 分析 → 结论<br/>
+      本发明模型：事件 → 提示 → 确认 → 事实
+    </p>
+
+    <h3>六、技术价值</h3>
+    <ul>
+      <li>离线优先 + 极低功耗</li>
+      <li>不依赖设备智能</li>
+      <li>判断与责任结构性外置</li>
+      <li>可长期复用与扩展</li>
+    </ul>
+  </section>
+
+  <hr style="margin:60px 0;" />
+
+  <!-- 机芯专利 -->
+  <section>
+    <h2>一种低功耗事件闭环的嵌入式实体节点机芯模组及其方法</h2>
+
+    <h3>一、核心问题</h3>
+    <p>
+      现有低功耗设备依赖持续在线或本地智能，导致功耗不可控、
+      判断风险下沉、设备不可长期复用。
+    </p>
+
+    <h3>二、核心思想</h3>
+    <p>
+      机芯只保留“事件—提示—确认”的最小闭环能力，
+      不承担判断、不解释事件、不生成结论。
+    </p>
+
+    <h3>三、机芯职责</h3>
+    <ul>
+      <li>产生事件（触发/异常/唤醒）</li>
+      <li>执行提示（固定蜂鸣/语音/震动）</li>
+      <li>接收确认并上报</li>
+    </ul>
+
+    <h3>四、低功耗机制</h3>
+    <ul>
+      <li>默认深度休眠</li>
+      <li>仅保留RTC与唤醒域</li>
+      <li>事件触发短时唤醒</li>
+      <li>完成后强制回休眠</li>
+    </ul>
+
+    <h3>五、本质区别</h3>
+    <p>
+      不是“低功耗智能设备”，而是“只负责事件的节点”。
+    </p>
+
+    <h3>六、技术价值</h3>
+    <ul>
+      <li>极低功耗</li>
+      <li>职责冻结，可长期复用</li>
+      <li>风险与判断外置</li>
+      <li>适配多种实体形态</li>
+    </ul>
+  </section>
+
+  <hr style="margin:60px 0;" />
+
+  <footer style="margin-top:40px; font-size:14px; color:#555;">
+    <p>联系邮箱：xhuman.lab@hotmail.com</p>
+    <p>所在地：加拿大</p>
+    <p>© 2026 xHuman Ltd</p>
+  </footer>
+
+</body>
+</html>
