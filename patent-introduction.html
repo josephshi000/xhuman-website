@@ -4,166 +4,185 @@
   <meta charset="UTF-8" />
   <title>Patent Overview | xHuman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="System invention patent and embedded module invention patent overview for xHuman physical event system platform." />
+  <meta name="description" content="System Invention Patent Introduction and Embedded Module Invention Patent Introduction" />
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.8; color: #111; max-width: 980px;">
 
   <nav style="margin-bottom: 40px;">
     <a href="/index.html"><strong>English</strong></a> |
-    <a href="/zh/patent-introduction.html">中文</a>
+    <a href="/zh/index.html">中文</a>
     <br /><br />
     <a href="/index.html">Home</a> |
     <a href="/platform.html">Platform</a> |
-    <a href="/technology.html">Technology</a> |
+    <a href="/technology.html">Technology Architecture</a> |
     <a href="/application-scenarios.html">Application Scenarios</a> |
     <a href="/patent-introduction.html">Patent Overview</a> |
-    <a href="/about.html">About</a> |
+    <a href="/about.html">About Us</a> |
     <a href="/contact.html">Contact</a>
   </nav>
 
-  <h1>Patent Overview</h1>
+  <h1>System Invention Patent Introduction</h1>
+  <h2>A Physical Event Closed-Loop System Based on Low-Power Event Nodes and Its Method</h2>
 
-  <p>
-    xHuman’s intellectual property structure includes two core invention patents:
-  </p>
+  <h3>1. What Problem Does This System Solve?</h3>
+  <p>Existing IoT systems, wearable systems, positioning systems, or so-called “smart systems” generally rely on one fundamental assumption: the system must continuously sense, remain online, and continuously make judgments in order to be responsible for the real world.</p>
+  <p>This assumption directly creates structural problems at the system level:</p>
+  <p>Dependence on continuous data uploads, resulting in uncontrollable power consumption, bandwidth usage, and scalability;</p>
+  <p>Judgment, risk, and liability embedded in devices or algorithms, creating unverifiable and compliance risks;</p>
+  <p>Events considered “established” immediately upon reporting, lacking confirmation and closure;</p>
+  <p>Limited cross-scenario reuse, requiring redesign of devices and rules for each application;</p>
+  <p>Failure of a single device or function leading to degradation of overall system value.</p>
+  <p>Existing systems attempt to “observe the world,” but cannot reliably confirm what has truly occurred. This invention does not attempt to make systems “smarter,” but instead redefines what constitutes a “completed event.”</p>
 
-  <ul>
-    <li>Physical Event Closed-Loop System Architecture</li>
-    <li>Low-Power Embedded Event Node Core Module</li>
-  </ul>
+  <h3>2. Core Concept of the Invention</h3>
+  <p>This invention proposes an entity-based system architecture built around the “event closed loop” as the smallest system unit. The core principle is: the system is not based on continuous sensing, but on verifiable events; not centered on algorithmic judgment, but on human confirmation as the closing condition.</p>
+  <p>Under this principle:</p>
+  <p>The system only recognizes events that complete the closed loop;</p>
+  <p>Unconfirmed reports do not constitute system facts;</p>
+  <p>Judgment, rules, risk, and liability reside at the system layer rather than the device layer.</p>
 
-  <hr style="margin: 50px 0;" />
+  <h3>3. What Kind of System Is Proposed?</h3>
+  <p>This invention is not a specific application system, but a reusable event closed-loop architecture applicable across multiple physical scenarios. The system includes:</p>
+  <p>Multiple low-power physical event nodes (Event Nodes);</p>
+  <p>At least one system-side event coordination unit;</p>
+  <p>At least one human-machine confirmation and acknowledgment channel.</p>
+  <p>Each event must complete the following closed-loop path:</p>
+  <p>Event Trigger → System Prompt → Human Confirmation → Status Acknowledgment</p>
+  <p>The system does not automatically determine whether an event is important; it only ensures whether the event has been confirmed.</p>
 
-  <!-- ===== System Patent ===== -->
+  <h3>4. Complete Separation of Device Responsibilities</h3>
+  <p>Within this invention:</p>
+  <p>Device Layer: responsible only for event triggering, prompting, and confirmation capture;</p>
+  <p>System Layer: responsible for orchestration, escalation, association, and state management;</p>
+  <p>Rule Layer: responsible for interpreting event meaning, risk evaluation, and response strategy.</p>
+  <p>Devices cannot independently form conclusions, and the system will not bypass confirmation to declare facts. This structural separation prevents algorithmic misjudgment from directly producing system decisions and prevents device errors from becoming liability conclusions.</p>
 
-  <h2>System Invention Patent</h2>
-  <h3>A Physical Event Closed-Loop System Based on Low-Power Event Nodes</h3>
+  <h3>5. A Verifiable Event Network, Not a Data Network</h3>
+  <p>Conventional systems follow this model:</p>
+  <p>Data Collection → Data Upload → Algorithm Analysis → Output Conclusion</p>
+  <p>This invention follows:</p>
+  <p>Event Trigger → Human-Perceivable Prompt → Human Confirmation → System Records Fact</p>
+  <p>In this system:</p>
+  <p>Data is not the core;</p>
+  <p>Continuous sensing is not required;</p>
+  <p>Confirmation behavior is the most important signal.</p>
 
-  <h4>1. Problem Addressed</h4>
-  <p>
-    Conventional IoT and smart systems rely on continuous sensing, continuous connectivity,
-    and algorithmic judgment. This creates structural limitations:
-  </p>
-  <ul>
-    <li>High power consumption and bandwidth dependency</li>
-    <li>Risk and liability embedded within devices or algorithms</li>
-    <li>Events considered valid upon reporting, without confirmation</li>
-    <li>Limited cross-scenario reuse</li>
-    <li>System value degradation when individual devices fail</li>
-  </ul>
+  <h3>6. Event Escalation and Persistence Mechanism</h3>
+  <p>The system defines:</p>
+  <p>Unconfirmed events are not considered complete;</p>
+  <p>The system may escalate uncompleted events based on rules;</p>
+  <p>Escalation may include repeated prompts, expanded notification scope, or involvement of additional nodes or personnel;</p>
+  <p>An event remains in an “open” state until confirmed.</p>
+  <p>The system does not make decisions on behalf of humans, but it does not allow unconfirmed events to disappear.</p>
 
-  <p>
-    Existing systems attempt to “observe the world.”
-    This invention redefines what constitutes a “completed event.”
-  </p>
+  <h3>7. Fundamental Difference from Existing Systems</h3>
+  <p>Existing systems:</p>
+  <p>Core is data and sensing</p>
+  <p>Mode: continuous online, continuous upload</p>
+  <p>Event established upon reporting</p>
+  <p>This invention:</p>
+  <p>Core is event and confirmation</p>
+  <p>Mode: offline-first, event-driven</p>
+  <p>Event established only upon confirmation</p>
 
-  <h4>2. Core Concept</h4>
-  <p>
-    The system is built around the concept of a verifiable event loop:
-  </p>
+  <h3>8. Applicable Physical Event Scenarios</h3>
+  <p>Applicable across industries, including:</p>
+  <p>Companion, caregiving, children and elderly systems;</p>
+  <p>Luggage, property, and asset state confirmation systems;</p>
+  <p>Supervisory systems that record facts without automatic judgment;</p>
+  <p>Group activity and organizational systems;</p>
+  <p>Other scenarios requiring strict power efficiency and liability boundaries.</p>
 
-  <p>
-    <strong>Event Trigger → Human-Perceivable Prompt → Human Confirmation → Status Acknowledgment</strong>
-  </p>
+  <h3>9. Why the System Can Evolve Long-Term</h3>
+  <p>The invention is not bound to:</p>
+  <p>Any specific sensor;</p>
+  <p>Any specific communication protocol;</p>
+  <p>Any specific application form.</p>
+  <p>It binds only to whether an event forms a closed loop. As technology evolves, system rules may evolve, but the closed-loop structure remains stable.</p>
 
-  <p>
-    Only events that complete this loop are recognized as system-level facts.
-  </p>
+  <h3>10. Technical Value Summary</h3>
+  <p>Reliable system-level facts under ultra-low-power and offline conditions;</p>
+  <p>No dependence on device intelligence;</p>
+  <p>Large-scale reusable physical nodes;</p>
+  <p>Structural isolation of judgment and liability;</p>
+  <p>Foundational architecture for systematizing real-world events.</p>
 
-  <h4>3. Structural Separation</h4>
-  <ul>
-    <li><strong>Device Layer:</strong> Event triggering and confirmation capture</li>
-    <li><strong>System Layer:</strong> Orchestration, escalation, state management</li>
-    <li><strong>Rule Layer:</strong> Meaning interpretation and risk handling</li>
-  </ul>
+  <h3>Definition</h3>
+  <p>This invention defines an entity-based system architecture built around the event closed loop as the smallest unit, achieving verifiable, scalable, and reusable event systems under low-power, offline-first conditions.</p>
 
-  <p>
-    Judgment and liability are structurally removed from the device.
-  </p>
-
-  <hr style="margin: 50px 0;" />
-
-  <!-- ===== Embedded Module Patent ===== -->
-
-  <h2>Embedded Module Invention Patent</h2>
-  <h3>A Low-Power Embedded Physical Event Node Core Module</h3>
-
-  <h4>1. Problem Addressed</h4>
-  <p>
-    Most low-power devices are designed to remain online or perform local intelligence,
-    which leads to:
-  </p>
-
-  <ul>
-    <li>Uncontrolled energy consumption</li>
-    <li>Device-side decision risk</li>
-    <li>Limited long-term reuse</li>
-    <li>Increasing hardware complexity across applications</li>
-  </ul>
-
-  <h4>2. Core Concept</h4>
-  <p>
-    The module is intentionally reduced to a strict “event node” role.
-  </p>
-
-  <p>
-    It performs only three functions:
-  </p>
-
-  <ul>
-    <li>Event generation (button press, impact, environmental trigger)</li>
-    <li>Fixed prompt output (audio, vibration, signal)</li>
-    <li>Human confirmation capture</li>
-  </ul>
-
-  <p>
-    It does not interpret, analyze, or generate conclusions.
-  </p>
-
-  <h4>3. Power Architecture</h4>
-  <ul>
-    <li>Deep sleep by default</li>
-    <li>Always-on minimal wake domain (RTC)</li>
-    <li>Short active burst upon trigger</li>
-    <li>Automatic shutdown after completion</li>
-  </ul>
-
-  <p>
-    The module is not optimized by “doing less,”
-    but by “remaining inactive most of the time.”
-  </p>
+  <p>Contact Email: xhuman.lab@hotmail.com Location: Canada</p>
 
   <hr style="margin: 50px 0;" />
 
-  <h2>Fundamental Difference from Existing Systems</h2>
+  <h1>Embedded Core Module Invention Patent Introduction</h1>
+  <h2>A Low-Power Embedded Physical Event Node Core Module and Its Method</h2>
 
-  <p><strong>Conventional Model:</strong></p>
-  <p>Data Collection → Upload → Algorithm Analysis → Output Decision</p>
+  <h3>1. What Problem Does This Invention Solve?</h3>
+  <p>Most existing low-power nodes, tags, wearables, or so-called smart terminals rely on the assumption that devices must remain online or perform local intelligence for systems to function.</p>
+  <p>This creates structural problems:</p>
+  <p>Uncontrolled energy consumption;</p>
+  <p>Device-side judgment creating safety and compliance risk;</p>
+  <p>Loss of functionality when offline;</p>
+  <p>Repeated hardware redesign for different applications.</p>
+  <p>This invention takes a fundamentally different path.</p>
 
-  <p><strong>xHuman Model:</strong></p>
-  <p>Event Trigger → Human Confirmation → Verified System Record</p>
+  <h3>2. Core Concept</h3>
+  <p>The module is reduced from a “smart entity” to a strict “event node,” removing intelligence, judgment, and relational logic from the hardware, retaining only minimal event-prompt-confirmation capability.</p>
 
-  <hr style="margin: 50px 0;" />
+  <h3>3. What Kind of Module?</h3>
+  <p>The module performs only three functions:</p>
+  <p>Generate events;</p>
+  <p>Output fixed prompts (audio / vibration / signal);</p>
+  <p>Capture and report confirmation.</p>
+  <p>No interpretation, no analysis, no conclusions.</p>
 
-  <h2>Intellectual Property Status</h2>
+  <h3>4. Long-Term Low-Power Mechanism</h3>
+  <p>Deep sleep by default;</p>
+  <p>Minimal always-on domain (RTC and wake logic);</p>
+  <p>Short wake-up upon trigger;</p>
+  <p>Forced shutdown after processing.</p>
+  <p>Not “calculate less,” but “remain inactive most of the time.”</p>
 
-  <ul>
-    <li>Patent filings in Canada and China</li>
-    <li>Trademark filings in Canada and China</li>
-  </ul>
+  <h3>5. Event Closed Loop</h3>
+  <p>Event → Prompt → Confirmation → Acknowledgment</p>
+  <p>Unconfirmed events are not closed;</p>
+  <p>No local intelligence judgment.</p>
 
-  <hr style="margin: 50px 0;" />
+  <h3>6. Fundamental Differences</h3>
+  <p>Defined as event node, not smart terminal;</p>
+  <p>Offline-first;</p>
+  <p>No local judgment;</p>
+  <p>Closed-loop validation;</p>
+  <p>Judgment externalized;</p>
+  <p>Power domains actively shut down;</p>
+  <p>Reusable as long-term system node.</p>
 
-  <h2>Contact</h2>
+  <h3>7. Application Scenarios</h3>
+  <p>Companion physical nodes;</p>
+  <p>Luggage and asset tags;</p>
+  <p>Strict compliance scenarios;</p>
+  <p>Other ultra-low-power environments.</p>
 
-  <p>
-    Email: <a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a>
-  </p>
+  <h3>8. Reusability Across Forms</h3>
+  <p>The module is defined not by product form, but by strict event-node responsibility.</p>
 
-  <p>
-    Location: Canada
-  </p>
+  <h3>9. Difference from Existing Low-Power Tags</h3>
+  <p>No local intelligence;</p>
+  <p>No continuous connectivity;</p>
+  <p>No attempt to interpret the world;</p>
+  <p>Only ensures event authenticity and confirmation.</p>
+
+  <h3>10. Technical Value Summary</h3>
+  <p>Reliable event loop under ultra-low power;</p>
+  <p>Independent from specific platforms;</p>
+  <p>Reusable across applications;</p>
+  <p>Structural separation of risk and judgment;</p>
+  <p>Scalable foundation for large physical node systems.</p>
+
+  <p>This invention defines an embedded entity node core module that is responsible only for events, not intelligence, forming the hardware foundation for long-term low-power system architectures.</p>
+
+  <p>Contact Email: <a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a> Location: Canada</p>
 
 </body>
 </html>
