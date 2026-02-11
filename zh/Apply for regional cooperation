@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>申請區域合作｜xHuman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="申請區域合作｜xHuman 中國各省合作計畫正式啟動" />
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.8; color: #111; max-width: 980px;">
+
+  <nav style="margin-bottom: 40px;">
+    <a href="/index.html">English</a> |
+    <a href="/zh/index.html">中文</a>
+    <br /><br />
+    <a href="/zh/index.html">首页</a> |
+    <a href="/zh/platform.html">产品平台</a> |
+    <a href="/zh/technology.html">技术架构</a> |
+    <a href="/zh/application-scenarios.html">应用场景</a> |
+    <a href="/zh/patent-introduction.html">专利说明</a> |
+    <a href="/zh/about.html">关于我们</a> |
+    <a href="/zh/contact.html">联系</a> |
+    <a href="/zh/region-cooperation-apply.html"><strong>申請區域合作</strong></a>
+  </nav>
+
+  <h1 style="font-size: 34px; margin-bottom: 10px;">申請區域合作</h1>
+  <p style="margin-top: 0; color: #333;">
+    中國各省合作計畫正式啟動｜請填寫以下資訊，我們將以郵件與你聯繫。
+  </p>
+
+  <hr style="margin: 30px 0;" />
+
+  <!-- 说明 -->
+  <section>
+    <h2>申請說明</h2>
+    <ul>
+      <li>本頁用於提交「區域合作 / 省級合作」意向申請。</li>
+      <li>提交後我們將通過郵件進行初步溝通與資料確認。</li>
+      <li>如你希望先了解系統與場景，請前往：<a href="/zh/application-scenarios.html">應用場景</a></li>
+    </ul>
+  </section>
+
+  <hr style="margin: 30px 0;" />
+
+  <!-- 表单：使用 mailto，不需要后端 -->
+  <section>
+    <h2>申請表</h2>
+
+    <form action="mailto:xhuman.lab@hotmail.com" method="post" enctype="text/plain"
+          style="border: 1px solid #ddd; padding: 18px; border-radius: 10px;">
+
+      <label style="display:block; margin-top: 10px;">姓名 / 聯絡人</label>
+      <input type="text" name="姓名" required
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">公司 / 團隊名稱</label>
+      <input type="text" name="公司或團隊"
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">所在省份 / 城市</label>
+      <input type="text" name="省份城市" required
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">聯繫郵箱</label>
+      <input type="email" name="郵箱" required
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">微信 / 電話（任選其一）</label>
+      <input type="text" name="微信或電話"
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">你希望切入的行業 / 應用方向</label>
+      <input type="text" name="行業方向" required
+             placeholder="例如：教育 / 文旅 / 零售 / 連鎖 / 物流 / 陪護 / 企業內部管理..."
+             style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+
+      <label style="display:block; margin-top: 14px;">你擁有的資源與能力（渠道 / 客戶 / 團隊 / 場地等）</label>
+      <textarea name="資源能力" rows="5" required
+                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+
+      <label style="display:block; margin-top: 14px;">預計合作模式（可選）</label>
+      <select name="合作模式"
+              style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;">
+        <option value="省級總代理">省級總代理</option>
+        <option value="城市合作">城市合作</option>
+        <option value="行業場景合作">行業場景合作</option>
+        <option value="系統集成與渠道合作">系統集成與渠道合作</option>
+        <option value="尚未確定">尚未確定</option>
+      </select>
+
+      <label style="display:block; margin-top: 14px;">補充說明</label>
+      <textarea name="補充說明" rows="5"
+                style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+
+      <div style="text-align:center; margin-top: 18px;">
+        <button type="submit"
+                style="background:#111; color:#fff; padding: 14px 34px; font-size: 16px; border: none; border-radius: 10px; cursor: pointer;"
+                onmouseover="this.style.background='#444'"
+                onmouseout="this.style.background='#111'">
+          提交申請
+        </button>
+      </div>
+
+      <p style="margin-top: 14px; color:#666; font-size: 14px;">
+        提交後將調用你的郵件客戶端發送申請內容（無需後端）。如未彈出郵件客戶端，請直接發郵件至：
+        <a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a>
+      </p>
+    </form>
+  </section>
+
+  <hr style="margin: 40px 0;" />
+
+  <section>
+    <h2>快速了解</h2>
+    <p>
+      <a href="/zh/application-scenarios.html">→ 查看應用場景</a><br/>
+      <a href="/zh/platform.html">→ 查看產品平台</a><br/>
+      <a href="/zh/technology.html">→ 查看技術架構</a>
+    </p>
+  </section>
+
+  <footer style="margin-top: 50px; color:#666; font-size: 14px;">
+    <p>聯繫郵箱：<a href="mailto:xhuman.lab@hotmail.com">xhuman.lab@hotmail.com</a></p>
+    <p>所在地：加拿大</p>
+    <p>© 2026 xHuman Ltd</p>
+  </footer>
+
+</body>
+</html>
