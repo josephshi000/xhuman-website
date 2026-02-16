@@ -9,6 +9,7 @@
 
 <body style="font-family: Arial, Helvetica, sans-serif; margin: 40px; line-height: 1.8; color: #111; max-width: 1000px;">
 
+  <!-- Navigation -->
   <nav style="margin-bottom: 40px;">
     <a href="/index.html"><strong>English</strong></a> |
     <a href="/zh/index.html">中文</a>
@@ -22,10 +23,12 @@
     <a href="/contact.html">Contact</a>
   </nav>
 
-  <img src="../assets/xhuman_logo.png"
+  <!-- Logo -->
+  <img src="/assets/xhuman_logo.png"
        alt="xHuman Logo"
        style="width: 180px; height: auto; margin-bottom: 20px;" />
 
+  <!-- Introduction -->
   <h1>xHuman</h1>
 
   <p>
@@ -33,7 +36,39 @@
     designed for real-world scenarios requiring long-term operation, collaborative integration, and system-level deployment.
   </p>
 
+  <!-- What We Do -->
   <h2>What We Do</h2>
+
+  <p>
+    xHuman Ltd develops a decentralized event-driven embedded node architecture.
+    Unlike traditional IoT systems that rely on continuous monitoring,
+    our system activates only when meaningful events occur,
+    enabling ultra-low power operation and scalable distributed coordination.
+  </p>
+
+  <!-- Audio Introduction Button -->
+  <div style="margin: 25px 0;">
+    <button onclick="document.getElementById('introAudio').play()"
+            style="
+              background-color: #111;
+              color: #fff;
+              padding: 12px 28px;
+              border: none;
+              border-radius: 6px;
+              font-size: 16px;
+              cursor: pointer;
+              transition: 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#333'"
+            onmouseout="this.style.backgroundColor='#111'">
+      ▶ Listen to 1-Minute Introduction
+    </button>
+
+    <audio id="introAudio">
+      <source src="xhuman-introduction.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
   <p>
     We focus on system-level architecture rather than isolated individual products.
@@ -43,6 +78,7 @@
     without compromising overall system consistency.
   </p>
 
+  <!-- Platform Philosophy -->
   <h2>Platform Philosophy</h2>
 
   <p>
@@ -54,8 +90,7 @@
 
   <hr style="margin: 60px 0;" />
 
-  <!-- ===== Global Cooperation Section ===== -->
-
+  <!-- Global Cooperation Section -->
   <h1 style="font-size: 32px;">
     xHuman Ltd (Canada) Launches Global Regional Cooperation
   </h1>
@@ -77,7 +112,6 @@
   </p>
 
   <!-- Buttons -->
-
   <div style="text-align: center; margin: 50px 0;">
     <a href="/application-scenarios.html"
        style="
@@ -122,6 +156,7 @@
 
   <hr style="margin: 60px 0;" />
 
+  <!-- Contact -->
   <h2>Contact</h2>
 
   <p>
@@ -138,3 +173,4 @@
 
 </body>
 </html>
+
