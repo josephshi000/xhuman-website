@@ -267,6 +267,46 @@
     </p>
   </article>
   
+    <!-- 20 -->
+  <article class="scenario-card">
+    <h2>20. Basement Water Leakage & Radon Overlimit Monitoring</h2>
+    <img class="scenario-img"
+         src="images/scenarios/s20.png"
+         alt="Basement Water Leakage and Radon Monitoring"
+         loading="lazy">
+
+    <h3>Scenario</h3>
+    <p>
+      Basements are typically unattended for long periods,
+      with environmental conditions remaining stable most of the time.
+      The system stays in deep sleep by default.
+      When ground water accumulation, pipe leakage,
+      or excessive radon concentration occurs,
+      the node is triggered,
+      outputs a fixed alert,
+      waits for user confirmation,
+      reports the event once,
+      and then returns to sleep.
+    </p>
+
+    <h3>Structural Characteristics</h3>
+    <p>
+      Event-triggered operation,
+      not continuously online,
+      no continuous data upload,
+      no semantic judgment,
+      forming a verifiable event-closure loop.
+    </p>
+
+    <h3>Innovation Distinction</h3>
+    <p>
+      Instead of continuously collecting environmental data,
+      the system records only the real moment when a critical condition occurs.
+      It captures verified events,
+      rather than generating persistent data streams.
+    </p>
+  </article>
+  
 </main>
 </body>
 </html>
